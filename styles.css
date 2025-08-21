@@ -1,0 +1,132 @@
+
+    /* ---------- Basic reset & base ---------- */
+    :root{
+      --primary: #0b5aa6;
+      --accent: #0b8bd6;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --radius: 12px;
+      --container: 1100px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    a{color:var(--primary);text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* ---------- container ---------- */
+    .container{
+      width:90%;
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0.75rem 0;
+    }
+
+    /* ---------- Header ---------- */
+    header{
+      background:red;
+      border-bottom:1px solid rgba(15,23,42,0.06);
+      position:sticky;top:0;z-index:60;
+      box-shadow: 0 2px 6px rgba(15,23,42,0.02);
+    }
+    .header-inner{
+      display:flex;
+      align-items:flex-start; /* logo dropped slightly */
+      justify-content:space-between;
+      gap:1rem;
+    }
+    .brand{
+      display:flex;
+      align-items:flex-start; /* logo and text align at top */
+      gap:0.75rem;
+      padding:0.75rem 0;
+    }
+    .brand .logo{
+      width:64px;
+      height:64px;
+      object-fit:contain;
+      margin-top:14px; /* drop logo down a bit */
+    }
+    .brand .title{
+      margin:0;
+      line-height:1.05;
+    }
+    .brand h1{font-size:1.125rem;margin:0;color:var(--primary)}
+    .brand p{margin:0;color:var(--muted);font-size:0.9rem}
+
+    /* ---------- Nav (desktop) ---------- */
+    nav.main-nav{display:flex;align-items:center;gap:1rem}
+    nav.main-nav a{padding:0.5rem 0.6rem;border-radius:6px;color:#0b2f5a}
+    nav.main-nav a:hover{background:rgba(11,90,166,0.06)}
+
+    /* ---------- Mobile menu button ---------- */
+    .mobile-toggle{display:none;padding:0.5rem;border-radius:6px;background:#f8fafc;border:1px solid #eef2f7;cursor:pointer}
+
+    /* ---------- Hero ---------- */
+    .hero{
+      padding:2.5rem 0;
+      background:linear-gradient(180deg, rgba(11,90,166,0.03), transparent);
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:1.25rem;
+      align-items:center;
+      align-items:start;
+    }
+    .hero-text p.lead{color:var(--muted);margin-top:0.5rem;max-width:48ch}
+    .hero-cta{margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:0.6rem 0.9rem;border-radius:8px;border:0;cursor:pointer;background:var(--primary);color:#fff
+    }
+    .btn.ghost{background:transparent;color:var(--primary);border:1px solid rgba(11,90,166,0.12)}
+
+    .hero-media .hero-img{width:100%;height:260px;object-fit:cover;border-radius:12px;box-shadow:0 14px 30px rgba(2,6,23,0.06)}
+
+    /* ---------- Quick facts ---------- */
+    .facts{display:flex;gap:1rem;margin-top:1.25rem;background:var(--card);padding:0.9rem;border-radius:12px;box-shadow:0 8px 18px rgba(2,6,23,0.04);justify-content:space-between}
+    .fact{flex:1;text-align:center}
+    .fact h3{margin:0;color:var(--primary);font-size:1.6rem}
+    .fact p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    /* ---------- Sections ---------- */
+    section{padding:1rem 0}
+    .section-title{color:var(--primary);font-weight:600;margin:0 0 0.5rem;font-size:1.05rem}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .card{background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 8px 20px rgba(2,6,23,0.04)}
+
+    /* ---------- News cards ---------- */
+    .news-card img{height:160px;object-fit:cover;border-radius:8px}
+    .news-body time{font-size:0.82rem;color:var(--muted)}
+
+    /* ---------- Resources list ---------- */
+    .resources-list{display:flex;flex-direction:column;gap:0.6rem;padding:0;margin:0;list-style:none}
+
+    /* ---------- Contact ---------- */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    address{font-style:normal;color:var(--muted);font-size:0.95rem}
+
+    /* ---------- Footer ---------- */
+    footer{background:#fff;border-top:1px solid rgba(15,23,42,0.04);padding:1rem 0;margin-top:2rem}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:1000px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:720px){
+      .header-inner{flex-direction:column;align-items:stretch}
+      nav.main-nav{display:none}
+      .mobile-toggle{display:inline-block}
+      .brand{width:100%;justify-content:flex-start}
+      .grid-3{grid-template-columns:1fr}
+    }
+
+    /* ---------- Mobile menu panel ---------- */
+    .mobile-menu{display:none;background:#fff;border-top:1px solid rgba(15,23,42,0.04)}
+    .mobile-menu.open{display:block}
+    .mobile-menu a{display:block;padding:0.75rem 1rem;border-bottom:1px solid rgba(2,6,23,0.03)}

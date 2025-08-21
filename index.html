@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- replace logo.png with your logo file -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL9HV6NO_rMs3dLGbKWomLU0Qx8hMLHn5AzhlTsgcofYcDASe6gwDE0oSb8AXL4dtgBmA&usqp=CAU" alt="CMAC Logo"
+        style="width:60px;height:60px;border-radius:50%;object-fit:cover;margin-right:10px;">
+        <div class="header-text">
+          <h1 class="title">Cambodia </h1>
+          <p>Mine Action Centre</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#news">News</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="container">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#news">News</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge" style="display:inline-block;padding:6px 10px;background:rgba(11,90,166,0.08);color:var(--primary);border-radius:999px;font-size:0.85rem">Welcome</p>
+          <h2 style="margin:0.6rem 0 0;font-size:1.8rem">Clearing land — saving lives</h2>
+          <p class="lead">We coordinate safe and sustainable clearance operations, risk education and victim assistance across Cambodia.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#programs">Our Programs</a>
+            <a class="btn ghost" href="#resources">Reports &amp; Maps</a>
+          </div>
+          <div style="margin-top:1rem;color:var(--muted);font-size:0.95rem;display:flex;gap:1rem;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span>Operational since <strong style="color:var(--primary)">1995</strong></span>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.2"/></svg>
+              <span>Field offices across the country</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- replace hero.jpg with your hero image -->
+          <img src="hero.jpg" alt="Field operation" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick facts -->
+    <section class="container">
+      <div class="facts">
+        <div class="fact">
+          <h3>1,250</h3>
+          <p>Hectares cleared</p>
+        </div>
+        <div class="fact">
+          <h3>987</h3>
+          <p>Lives impacted</p>
+        </div>
+        <div class="fact">
+          <h3>3,120</h3>
+          <p>Risk education sessions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="container">
+      <h3 class="section-title">Programs</h3>
+      <p style="color:var(--muted);margin-top:6px">We operate with safety, professionalism and community engagement.</p>
+
+      <div class="grid-3" style="margin-top:12px">
+        <article class="card">
+          <h4 style="margin:0 0 6px">Mine Clearance</h4>
+          <p style="margin:0;color:var(--muted)">Mechanical and manual clearance, technical survey and quality assurance.</p>
+          <p style="margin-top:8px"><a href="#resources">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h4 style="margin:0 0 6px">Risk Education</h4>
+          <p style="margin:0;color:var(--muted)">School and community sessions to reduce accidents and increase awareness.</p>
+          <p style="margin-top:8px"><a href="#resources">Learn more →</a></p>
+        </article>
+
+        <article class="card">
+          <h4 style="margin:0 0 6px">Victim Assistance</h4>
+          <p style="margin:0;color:var(--muted)">Rehabilitation, livelihood support and advocacy for survivors.</p>
+          <p style="margin-top:8px"><a href="#resources">Learn more →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="container">
+      <h3 class="section-title">Latest News</h3>
+      <p style="color:var(--muted);margin-top:6px">Recent updates from the field and organisation announcements.</p>
+
+      <div class="grid-3" style="margin-top:12px">
+        <article class="card news-card">
+          <img src="https://images.unsplash.com/photo-1549642706-1f137e6d6d86?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="">
+          <div class="news-body" style="padding-top:8px">
+            <time>Aug 1, 2025</time>
+            <h4 style="margin:6px 0 0">New clearance project begins in Kampong Thom</h4>
+            <p style="margin:6px 0 0;color:var(--muted)">We launched a six-month operation focusing on former conflict hotspots.</p>
+            <p style="margin-top:8px"><a href="#">Read more →</a></p>
+          </div>
+        </article>
+
+        <article class="card news-card">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="">
+          <div class="news-body" style="padding-top:8px">
+            <time>Jul 15, 2025</time>
+            <h4 style="margin:6px 0 0">Risk education reaches 10,000 students</h4>
+            <p style="margin:6px 0 0;color:var(--muted)">School sessions were delivered across rural provinces to reduce accidents.</p>
+            <p style="margin-top:8px"><a href="#">Read more →</a></p>
+          </div>
+        </article>
+
+        <article class="card news-card">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="">
+          <div class="news-body" style="padding-top:8px">
+            <time>Jun 20, 2025</time>
+            <h4 style="margin:6px 0 0">Annual report 2024 published</h4>
+            <p style="margin:6px 0 0;color:var(--muted)">Our annual report and operational maps are available to download.</p>
+            <p style="margin-top:8px"><a href="#">Read more →</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="container">
+      <h3 class="section-title">Resources & Reports</h3>
+      <ul class="resources-list" style="margin-top:10px">
+        <li class="card" style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <strong>Annual Report 2024 (PDF)</strong>
+            <div style="color:var(--muted);font-size:0.9rem">Download the full report and data summary.</div>
+          </div>
+          <a href="#">Download</a>
+        </li>
+        <li class="card" style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div>
+            <strong>Operational Maps (GIS)</strong>
+            <div style="color:var(--muted);font-size:0.9rem">Interactive maps and shapefiles for stakeholders.</div>
+          </div>
+          <a href="#">Open map</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h3 class="section-title">Contact Us</h3>
+      <p style="color:var(--muted);margin-top:6px">Get in touch with our head office or field coordination team.</p>
+
+      <div class="contact-grid" style="margin-top:12px">
+        <div class="card">
+          <h4 style="margin:0 0 6px">Head Office</h4>
+          <address>
+            Phnom Penh, Cambodia<br>
+            Phone: +855 23 123 456<br>
+            Email: <a href="mailto:info@cmac.gov.kh">info@cmac.gov.kh</a>
+          </address>
+        </div>
+
+        <form class="card" action="#" onsubmit="handleContact(event)">
+          <label style="display:block;font-weight:600">Name</label>
+          <input name="name" required type="text" style="width:100%;padding:8px;margin-top:6px;border:1px solid #e6eef8;border-radius:6px">
+
+          <label style="display:block;font-weight:600;margin-top:10px">Email</label>
+          <input name="email" required type="email" style="width:100%;padding:8px;margin-top:6px;border:1px solid #e6eef8;border-radius:6px">
+
+          <label style="display:block;font-weight:600;margin-top:10px">Message</label>
+          <textarea name="message" required rows="4" style="width:100%;padding:8px;margin-top:6px;border:1px solid #e6eef8;border-radius:6px"></textarea>
+
+          <div style="margin-top:10px">
+            <button type="submit" style="background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;border:0;cursor:pointer">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+      <div style="color:var(--muted)">&copy; <span id="year"></span> Cambodia Mine Action Centre</div>
+      <div style="color:var(--muted)"><a href="#">Privacy</a> · <a href="#">Accessibility</a> · <a href="#">Sitemap</a></div>
+    </div>
+  </footer>
+
+  <!-- Minimal JS -->
+  <script>
+    // mobile menu toggle
+    const toggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    toggle?.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    // fill year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // contact form demo
+    function handleContact(e){
+      e.preventDefault();
+      const f = e.target;
+      const n = f.name.value.trim();
+      alert('Thank you, ' + (n || 'visitor') + '. (Demo only)');
+      f.reset();
+    }
+  </script>
+</body>
+</html>
