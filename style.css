@@ -1,0 +1,159 @@
+/* Import Google Fonts for a nice script and serif font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400&display=swap');
+
+/* --- General Styles --- */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    background-color: #f3f1ede4; /* A soft, warm background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4b3832; /* A dark brown for headings */
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 2.5rem; }
+
+a {
+    text-decoration: none;
+    color: #8c5b3f; /* A light brown for links */
+}
+
+/* --- Header Section --- */
+.main-header {
+background-image: url('https://i.pinimg.com/1200x/ab/c7/e5/abc7e5a645410d5a75e34aa023d19c30.jpg');
+    height: 90vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+    padding: 2rem;
+}
+
+.date {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e4c59e;
+}
+
+/* --- Content Sections --- */
+.section2 {
+    padding: 4rem 10%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(211, 184, 10, 0.657);
+}
+.section {
+    padding: 4rem 10%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(247, 246, 239, 0.571);
+}
+.event {
+    margin-bottom: 2rem;
+}
+
+/* --- Gallery Section --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    border:2px solid black
+}
+
+/* --- RSVP Section --- */
+.rsvp-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #8c5b3f;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.rsvp-button:hover {
+    background-color: #6a442e;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f908a4cc;
+    color: #f7f3e9;
+    margin-top: 2rem;
+}
+footer p{
+  margin:0;
+  font-size: 1.5rem;
+}
+/* --- Animation: Fade In on Scroll --- */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0; /* Starts hidden */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+/* This is the class that will be added when the element is in view */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
